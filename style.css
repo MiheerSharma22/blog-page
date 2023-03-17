@@ -1,0 +1,131 @@
+* {
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    height :100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    /* max-width: 1440px; */
+    min-width: 300px;
+    max-width: 70%;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 1.5em 0;
+}
+
+nav {
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1f1f1fd2;
+    margin-bottom: 3.5rem;
+}
+
+.subscribe {
+    text-decoration-color: #1f1f1f9c;
+    color: #1f1f1fd2;
+    font-size: large;
+    font-weight: 500;
+
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.search { 
+    height: 1.5em;
+    cursor: pointer;
+}
+
+.grid {
+    min-height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 3em;
+    column-gap: 2em;
+}
+
+.card {
+    min-height: fit-content;
+    border: 7px solid #1f1f1f32;
+    padding: 1.5em;
+    transition: border .2s;
+    user-select: none;
+}
+
+.card-heading {
+    font-size: 2em;
+}
+
+.world-tag , 
+.design-tag { 
+    margin-bottom: 1em;
+    font-weight: 600;
+    color: blue;
+}
+
+.design-tag {
+    color: rgb(0, 152, 0);
+}
+
+.title-date {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    height: 7em;
+}
+
+.date {
+    color: #1f1f1f63;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #1f1f1f9d;
+    font-weight: 600;
+}
+
+.continue {
+    color: rgb(0, 145, 255);
+}
+
+.head-container {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width:900px) {
+    .nav {
+        justify-content: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 1em;
+    }
+}
+
+@media (max-width:500px) {
+    .heading { 
+        margin: 0 auto;
+    }
+    .subscribe , .search {
+         display: none;
+    }
+}
